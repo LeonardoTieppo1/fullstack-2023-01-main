@@ -5,6 +5,7 @@ import { Html5Outlined, UserAddOutlined, QuestionCircleOutlined, DeleteOutlined 
 import Sider from 'antd/es/layout/Sider';
 import { RouterProvider, createBrowserRouter} from 'react-router-dom';
 import { ComponentsD } from './ComponentsD';
+import { ComponentsU } from './ComponentsU';
 function App() {
 
   const rotas = createBrowserRouter([{
@@ -12,7 +13,7 @@ function App() {
     element: <ComponentsD/>
   }, {
     path: '/user',
-    element: <h1>Usuarios</h1>
+    element: <ComponentsU/>
   },
   {
     path: '/question',
@@ -52,7 +53,7 @@ function App() {
         </Content>
       </Layout>
       <Footer>
-        <h1>Rodapé</h1>
+        <h1 style={{marginTop:25}}>Rodapé</h1>
       </Footer>
     </Layout>
 
